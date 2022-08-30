@@ -12,7 +12,7 @@ namespace QuizMe.Containers
 {
     class QuizletData
     {
-        private static readonly Regex URLREGEX = new Regex("([a-zA-Z]+(-[a-zA-Z]+)+)", RegexOptions.Compiled);
+        private static readonly Regex URLREGEX = new Regex("([a-zA-Z1-9]+(-[a-zA-Z1-9]+)+)", RegexOptions.Compiled);
         public Dictionary<string, string> Data
         { get; set; }
         public string url { get; set; }
